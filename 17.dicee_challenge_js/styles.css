@@ -1,0 +1,27 @@
+body {
+  background-color: #413F42;
+  text-align: center;
+}
+
+h1 {
+  color: #36AE7C;
+  font-family: 'Pattaya', sans-serif;
+  font-size: 10rem;
+  display: inline-block;
+}
+
+h2 {
+  color: #36AE7C;
+  font-family: 'Englebert', sans-serif;
+  font-size: 3rem;
+}
+
+.playerone {
+  display: inline-block;
+  padding: 0 100px;
+}
+
+.playertwo {
+  display: inline-block;
+  padding: 0 100px;
+}

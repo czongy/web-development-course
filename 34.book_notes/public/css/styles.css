@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-between;
+    margin: 15px 30px;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+a:visited {
+    color: yellow;
+}
+
+img {
+    border-radius: 5px;
+}
+
+form label {
+    color: yellow;
+    font-size: 20px;
+}
+
+form input {
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px 0 20px;
+    min-height: 30px;
+    outline: none;
+    padding: 0 5px;
+}
+
+form input:focus {
+    border: 3px solid yellow;
+    padding: 0 5px;
+}
+
+form textarea {
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px 0 20px;
+    padding: 10px;
+}
+
+form button {
+    align-self: center;
+    background-color: black;
+    border: 3px solid yellow;
+    border-radius: 5px;
+    color: yellow;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    width: fit-content;
+}
+
+form button:hover {
+    background-color: yellow;
+    color: black;
+    transition: all 0.3s ease-out;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, max(200px));
+    gap: 50px;
+    margin: 20px;
+}
+
+.book {
+    justify-self: center;
+}
+
+.date-rating {
+    color: grey;
+}
+
+.book-details {
+    margin: 50px 10px 0;
+    min-height: max-content;
+}
+
+.book-details img {
+    float: left;
+    margin-right: 20px;
+}
+
+.book-details h1 {
+    color: yellow;
+    padding: 5px 0;
+}
+
+.book-details p {
+    color: gray;
+    padding: 5px 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#review h2 {
+    margin: 50px 10px 10px;
+}
+
+.review-text {
+    font-size: 20px;
+    margin: 0 10px 50px;
+}
+
+#add-entry {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+    max-width: 800px;
+}
+
+#review {
+    margin: auto;
+    max-width: 800px;  
+}
+
+@media only screen and (max-width: 490px) {
+
+
+    .grid-container {
+        justify-content: center;
+    }
+}

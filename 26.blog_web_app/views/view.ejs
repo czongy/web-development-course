@@ -1,0 +1,12 @@
+<%- include ("partials/header") -%>
+
+<div class="view_page">
+    <h1><%= post.title %></h1>
+    <p><%- post.content %></p>
+    <div>
+        <a href="/edit/<%= post.id %>">Edit</a>
+        <a href="/delete/<%= post.id %>">Delete</a>
+    </div>
+</div>
+
+<%- include ("partials/footer") -%>

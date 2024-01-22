@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs'); -%>
+
+<form id="add-entry" action="/add" method="post">
+    <label>Title:</label>
+    <input type="text" name="title"/>
+    <label>Author:</label>
+    <input type="text" name="author"/>
+    <label>ISBN:</label>
+    <input type="text" name="isbn"/>
+    <label>Date Read (YYYY-MM-DD):</label>
+    <input type="text" name="date"/>
+    <label>Rating (?/10):</label>
+    <input type="text" name="rating"/>
+    <label>Review:</label>
+    <textarea name="review" cols="30" rows="10"></textarea>
+    <button type="submit">Submit</button>
+</form>
+
+<%- include('partials/footer.ejs'); -%>

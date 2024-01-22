@@ -1,0 +1,16 @@
+<%- include ("partials/header") -%>
+
+<div class="box-container">
+    <% posts.forEach((post, index) => { %>
+        <div class="box">
+            <h2><%= post.title %></h2>
+            <p>
+                <%= post.content.slice(0, 250) %>...
+                <a class="read_more" href="/view/<%= post.id %>">read more</a>
+            </p>
+        </div>
+    <% }) %>
+</div>
+
+
+<%- include ("partials/footer") -%>

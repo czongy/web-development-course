@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs'); -%>
+
+<div id="review">
+    <div class="book-details clearfix">
+        <img src="https://covers.openlibrary.org/b/isbn/<%= book.isbn %>-M.jpg" alt="<%= book.title %>"  width="150" height="250">
+        <h1><%= book.title %></h1>
+        <h1><%= book.author %></h1>
+        <p>ISBN: <%= book.isbn %></p>
+        <p>DATE READ: <%= book.date %></p>
+        <p>RATING: <%= book.rating %></p>
+    </div>
+    <h2>MY NOTES</h2>
+    <p class="review-text"><%- book.review.replace(/\n/g, '<br/>') %></p>
+    <form action="/delete" method="POST">
+        <button type="submit" name="deleteId" value="<%= book.id %>">Delete Entry</button>
+    </form>
+</div>
+
+<%- include('partials/footer.ejs'); -%>

@@ -1,0 +1,15 @@
+<%- include('partials/header.ejs'); -%>
+
+<div class="grid-container">
+    <% books.forEach(book => { %>
+        <div class="book">
+            <a href="/review/<%= book.id %>">
+                <img src="https://covers.openlibrary.org/b/isbn/<%= book.isbn %>-M.jpg" width="200" height="300">
+            </a>
+            <p class="title-author"><span class="bold"><%= book.title %></span> <br> <%= book.author %></p>
+            <p class="date-rating">DATE READ: <%= book.date %> RATING: <%= book.rating %>/10</p>
+        </div>
+    <% }); %>
+</div>
+
+<%- include('partials/footer.ejs'); -%>

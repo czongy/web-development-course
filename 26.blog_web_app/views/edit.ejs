@@ -1,0 +1,13 @@
+<%- include ("partials/header") -%>
+
+<div>
+    <form class="newForm" action="/edit/<%= post.id %>" method="post">
+        <h1>Edit a blog</h1>
+        <% console.log(post.title); %>
+        <input type="text" class="title" name="title" placeholder="Title" value="<%= post.title %>" required>
+        <textarea name="content" rows="10" cols="50" placeholder="Content" required><%= post.content %></textarea>
+        <button type="submit">Confirm</button>
+    </form>
+</div>
+
+<%- include ("partials/footer") -%>

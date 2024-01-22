@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding : 0;
+}
+
+html, body {
+    background-image: url("../img/background.jpg");
+    font-family: 'Berkshire Swash', serif;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/** NavBar **/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav h1 {
+    font-family: 'Berkshire Swash', serif;
+    font-size: 35px;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+li {
+    list-style: none;
+    margin: 10px 10px;
+    font-size: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/** Content **/
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px 16px;
+    margin: 0 auto;
+    width: 90vw;
+}
+
+.box p {
+    font-size: 16px;
+}
+
+.read_more {
+    text-decoration: underline;
+}
+
+footer {
+    margin: 10px auto;
+}
+
+/** New form **/
+.newForm {
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.newForm h1 {
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+.newForm .title {
+    border: 3px double grey;
+    display: block;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 20px;
+    margin: 25px auto;
+    padding: 10px;
+    width: 100%;
+}
+
+.newForm textarea {
+    border: 3px double grey;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.newForm button {
+    border: 3px solid black;
+    border-radius: 10px;
+    display: block;
+    font-family: inherit;
+    font-size: 30px;
+    margin: 20px auto 0;
+    width: 200px;
+    height: 50px;
+}
+
+/** View page **/
+.view_page h1 {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.view_page p {
+    margin: 20px auto;
+    width: 80%;
+    white-space: pre-line;
+}
+
+.view_page div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.view_page a {
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 50px 20px;
+}
